@@ -1,0 +1,25 @@
+.lun{
+    position: relative;
+    margin-top: 20vh;
+    margin: 30px;
+    font-size: 30px;
+    padding: 60px;
+}
+.sik{
+    position: relative;
+    margin: 30px;
+    font-size: 30px;
+    padding: 60px;
+}
+.lunti{
+    padding: 50px;
+}
+.lunde{
+    margin:40px;
+}
+.skide{
+    margin: 40px;
+}
+footer{
+    padding: 20px;
+}

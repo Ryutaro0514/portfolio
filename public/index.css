@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(128, 128, 128, 0.176),
+        rgba(128, 128, 128, 0.176) 10px,
+        white 10px,
+        white 20px
+    );
+}
+body {
+    height: 100vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    z-index: 1;
+}
+
+.headlink {
+    margin: 20px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border: solid black;
+    background-color: yellow;
+}
+
+.body {
+    height: 80vh;
+    margin-top: 5%;
+}
+
+.proftext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    font-size: 100px;
+}
+
+.prof {
+    margin: 100px;
+    padding: 30px;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+
+.picname {
+    display: flex;
+    align-items: center;
+}
+
+.mypic {
+    height: 300px;
+}
+
+.nameall {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 50px;
+}
+
+.bir,
+.hob,
+.sen {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.hira {
+    margin-left: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    background-color: white;
+}
+
+@media (max-width:650px){
+    .head{
+        display: block;
+        height: 120%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: -100%;
+        left: -100%;
+        overflow: auto;
+    }
+    .linkactive{
+        top: 0;
+        left: 0;
+    }
+    .link{
+        margin-top: 50px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+    .picname{
+        display: block;
+    }
+    .humall{
+        z-index: 2;
+        position: relative;
+        top: 0;
+        left: 86%;
+        background-color: red;
+        width: 60px;
+        height: 60px;
+    }
+    .lineone,
+    .linetwo,
+    .linethree{
+        transition: 0.3s;
+        background-color: white;
+        height: 4px;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        translate: -50%;
+    }
+    .active:nth-of-type(1){
+        top: 50%;
+        rotate: 45deg;
+    }
+    .active:nth-of-type(2){
+        opacity: 0;
+    }
+    .active:nth-of-type(3){
+        top: 50%;
+        rotate: -45deg;
+    }
+    .lineone{
+        top: 25%;
+    }
+    .linetwo{
+        top: 50%;
+    }
+    .linethree{
+        top: 75%;
+    }
+
+}
