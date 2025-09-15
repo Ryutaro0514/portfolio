@@ -10,6 +10,13 @@ h1{
 img{
     margin: 30px;
 }
+.title{
+    font-weight: 600;
+    font-size: 40px;
+}
+.des{
+    margin-left: 30px;
+}
 @media (max-width:650px) {
     img{
         margin: 0px;

@@ -96,6 +96,21 @@ footer {
 }
 
 @media (max-width:650px){
+    .proftext{
+        padding: auto;
+    }
+    .body{
+        width: 100vw;
+    }
+    .name{
+        font-size: 300%;
+    }
+    .prof{
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
     .head{
         display: block;
         height: 120%;

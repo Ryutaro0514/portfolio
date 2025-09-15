@@ -11,15 +11,29 @@
     font-size: 30px;
     padding: 60px;
 }
-.lunti{
-    padding: 50px;
-}
+
 .lunde{
     margin:40px;
+    display: flex;
+}
+.lunde div{
+    margin: 20px;
 }
 .skide{
     margin: 40px;
+    display: flex;
+}
+.skide div{
+    margin: 20px;
 }
 footer{
     padding: 20px;
+}
+@media (max-width:650px){
+    .lunde{
+        display: block;
+    }
+    .skide{
+        display: block;
+    }
 }
